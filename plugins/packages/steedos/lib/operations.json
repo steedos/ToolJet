@@ -1,0 +1,172 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ToolJet/ToolJet/develop/plugins/schemas/operations.schema.json",
+  "title": "plugins/packages/airtable datasource",
+  "description": "A schema defining Steedos datasource",
+  "type": "api",
+  "defaults": {},
+  "properties": {
+    "operation": {
+      "label": "Operation",
+      "key": "operation",
+      "type": "dropdown-component-flip",
+      "description": "Single select dropdown for operation",
+      "list": [
+        {
+          "value": "list_records",
+          "name": "List records"
+        },
+        {
+          "value": "retrieve_record",
+          "name": "Retrieve record"
+        },
+        {
+          "value": "create_record",
+          "name": "Create record"
+        },
+        {
+          "value": "update_record",
+          "name": "Update record"
+        },
+        {
+          "value": "delete_record",
+          "name": "Delete record"
+        }
+      ]
+    },
+    "list_records": {
+      "object_name": {
+        "label": "Object name",
+        "key": "object_name",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter object name",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "Object name"
+      },
+      "page_size": {
+        "label": "Page size",
+        "key": "page_size",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter page size",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "10"
+      },
+      "offset": {
+        "label": "Offset",
+        "key": "offset",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter offset",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "recAOzdIHaRpvRaGE"
+      }
+    },
+    "retrieve_record": {
+      "object_name": {
+        "label": "Object name",
+        "key": "object_name",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter object name",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "Object name"
+      },
+      "record_id": {
+        "label": "Record ID",
+        "key": "record_id",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter record id",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "recu9xMnUdr2n2cw8"
+      }
+    },
+    "create_record": {
+      "object_name": {
+        "label": "Object name",
+        "key": "object_name",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter object name",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "Object name"
+      },
+      "body": {
+        "label": "Records",
+        "key": "body",
+        "type": "codehinter",
+        "description": "Enter list of records",
+        "height": "150px",
+        "placeholder": "[{ \"fields\": {} }]"
+      }
+    },
+    "update_record": {
+      "object_name": {
+        "label": "Object name",
+        "key": "object_name",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter object name",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "Object name"
+      },
+      "record_id": {
+        "label": "Record ID",
+        "key": "record_id",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter record id",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "appwKbrBctcQF9pYr"
+      },
+      "body": {
+        "label": "Body",
+        "key": "body",
+        "type": "codehinter",
+        "description": "Enter body",
+        "height": "150px"
+      }
+    },
+    "delete_record": {
+      "object_name": {
+        "label": "Object name",
+        "key": "object_name",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter object name",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "Object name"
+      },
+      "record_id": {
+        "label": "Record ID",
+        "key": "record_id",
+        "type": "codehinter",
+        "lineNumbers": false,
+        "description": "Enter record id",
+        "width": "320px",
+        "height": "36px",
+        "className": "codehinter-plugins",
+        "placeholder": "appwKbrBctcQF9pYr"
+      }
+    }
+  }
+}

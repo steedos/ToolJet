@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ToolJet/ToolJet/develop/plugins/schemas/manifest.schema.json",
+  "title": "Steedos datasource",
+  "description": "A schema defining steedos datasource",
+  "type": "api",
+  "source": {
+    "name": "Steedos",
+    "kind": "steedos",
+    "exposedVariables": {
+      "isLoading": false,
+      "data": {},
+      "rawData": {}
+    },
+    "options": {
+      "api_key": {
+        "type": "string",
+        "encrypted": true
+      }
+    },
+    "customTesting": true
+  },
+  "defaults": {
+    "url": {
+      "value": ""
+    },
+    "api_key": {
+      "value": ""
+    }
+  },
+  "properties": {
+    "url": {
+      "label": "URL",
+      "key": "url",
+      "type": "text",
+      "description": "https://demo.steedos.cn/"
+    },
+    "api_key": {
+      "label": "API key",
+      "key": "api_key",
+      "type": "password",
+      "description": "Api key for steedos",
+      "helpText": "For generating API key, visit steedos admin page."
+    }
+  },
+  "required": [
+    "api_key"
+  ]
+}
