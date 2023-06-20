@@ -15,7 +15,7 @@ tasks:
   - name: Server
     command: |
       cp .env.example .env
-      echo "TOOLJET_HOST=$(gp url 8082)" >> .env
+      echo "TOOLJET_HOST=$(gp url 3000)" >> .env
       echo "PG_HOST=127.0.0.1" >> .env
       echo "PG_PORT=5432" >> .env
       echo "PG_USER=postgres" >> .env
